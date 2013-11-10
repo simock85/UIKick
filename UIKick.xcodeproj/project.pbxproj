@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8720A0DE182FFD960095D5AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8720A0DD182FFD960095D5AC /* Foundation.framework */; };
 		8720A0E3182FFD960095D5AC /* UIKick.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8720A0E2182FFD960095D5AC /* UIKick.h */; };
 		8720A0E5182FFD960095D5AC /* UIKick.m in Sources */ = {isa = PBXBuildFile; fileRef = 8720A0E4182FFD960095D5AC /* UIKick.m */; };
 		8720A0EC182FFD960095D5AC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8720A0EB182FFD960095D5AC /* XCTest.framework */; };
@@ -16,6 +15,10 @@
 		8720A0F2182FFD960095D5AC /* libUIKick.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8720A0DA182FFD960095D5AC /* libUIKick.a */; };
 		8720A0F8182FFD960095D5AC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8720A0F6182FFD960095D5AC /* InfoPlist.strings */; };
 		8720A0FA182FFD960095D5AC /* UIKickTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8720A0F9182FFD960095D5AC /* UIKickTests.m */; };
+		8720A106182FFFDC0095D5AC /* UKColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8720A105182FFFDC0095D5AC /* UKColor.m */; };
+		8720A10918303AD60095D5AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8720A0DD182FFD960095D5AC /* Foundation.framework */; };
+		8720A10A18303ADE0095D5AC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8720A1071830399C0095D5AC /* UIKit.framework */; };
+		8720A10B18303B080095D5AC /* UKColor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8720A104182FFFDC0095D5AC /* UKColor.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				8720A10B18303B080095D5AC /* UKColor.h in CopyFiles */,
 				8720A0E3182FFD960095D5AC /* UIKick.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,6 +57,9 @@
 		8720A0F5182FFD960095D5AC /* UIKickTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UIKickTests-Info.plist"; sourceTree = "<group>"; };
 		8720A0F7182FFD960095D5AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8720A0F9182FFD960095D5AC /* UIKickTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIKickTests.m; sourceTree = "<group>"; };
+		8720A104182FFFDC0095D5AC /* UKColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UKColor.h; sourceTree = "<group>"; };
+		8720A105182FFFDC0095D5AC /* UKColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UKColor.m; sourceTree = "<group>"; };
+		8720A1071830399C0095D5AC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8720A0DE182FFD960095D5AC /* Foundation.framework in Frameworks */,
+				8720A10A18303ADE0095D5AC /* UIKit.framework in Frameworks */,
+				8720A10918303AD60095D5AC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +108,7 @@
 		8720A0DC182FFD960095D5AC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8720A1071830399C0095D5AC /* UIKit.framework */,
 				8720A0DD182FFD960095D5AC /* Foundation.framework */,
 				8720A0EB182FFD960095D5AC /* XCTest.framework */,
 				8720A0EE182FFD960095D5AC /* UIKit.framework */,
@@ -110,9 +119,11 @@
 		8720A0DF182FFD960095D5AC /* UIKick */ = {
 			isa = PBXGroup;
 			children = (
+				8720A0E0182FFD960095D5AC /* Supporting Files */,
 				8720A0E2182FFD960095D5AC /* UIKick.h */,
 				8720A0E4182FFD960095D5AC /* UIKick.m */,
-				8720A0E0182FFD960095D5AC /* Supporting Files */,
+				8720A104182FFFDC0095D5AC /* UKColor.h */,
+				8720A105182FFFDC0095D5AC /* UKColor.m */,
 			);
 			path = UIKick;
 			sourceTree = "<group>";
@@ -187,6 +198,7 @@
 		8720A0D2182FFD960095D5AC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = UK;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Simock85;
 			};
@@ -225,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8720A0E5182FFD960095D5AC /* UIKick.m in Sources */,
+				8720A106182FFFDC0095D5AC /* UKColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
