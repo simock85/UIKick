@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "UKColor.h"
 
 @interface UIKickTests : XCTestCase
 
@@ -26,9 +27,18 @@
     [super tearDown];
 }
 
-- (void)testExample
-{
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+- (void)testLightColorGeneration{
+    UIColor *aColor = [UIColor colorWithRed:20.f/255 green:20.f/255 blue:20.f/255 alpha:1.f];
+    UIColor *bColor = [UKColor lightColorFromColor:aColor];
+    CGFloat red, green, blue, alpha;
+    [bColor getRed:&red green:&green blue:&blue alpha:&alpha];
+    XCTAssertEqual(lroundf(red*1000), lroundf((20.f/255)*1200), @"");
+}
+
+- (void)testColorCache{
+    UIColor *aColor = [UIColor colorWithRed:20.f/255 green:20.f/255 blue:20.f/255 alpha:1.f];
+    UKColor.colorCache[@"acolor"] = aColor;
+    XCTAssertEqual(aColor, UKColor.colorCache[@"acolor"], @"");
 }
 
 @end
