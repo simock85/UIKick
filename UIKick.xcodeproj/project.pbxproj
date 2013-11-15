@@ -19,6 +19,7 @@
 		8720A10918303AD60095D5AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8720A0DD182FFD960095D5AC /* Foundation.framework */; };
 		8720A10A18303ADE0095D5AC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8720A1071830399C0095D5AC /* UIKit.framework */; };
 		8720A10B18303B080095D5AC /* UKColor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8720A104182FFFDC0095D5AC /* UKColor.h */; };
+		873AEF3D1835AB9000722A2C /* UIColor+UIKick.m in Sources */ = {isa = PBXBuildFile; fileRef = 873AEF3C1835AB9000722A2C /* UIColor+UIKick.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		8720A104182FFFDC0095D5AC /* UKColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UKColor.h; sourceTree = "<group>"; };
 		8720A105182FFFDC0095D5AC /* UKColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UKColor.m; sourceTree = "<group>"; };
 		8720A1071830399C0095D5AC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		873AEF3B1835AB9000722A2C /* UIColor+UIKick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+UIKick.h"; sourceTree = "<group>"; };
+		873AEF3C1835AB9000722A2C /* UIColor+UIKick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+UIKick.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,8 @@
 				8720A0E4182FFD960095D5AC /* UIKick.m */,
 				8720A104182FFFDC0095D5AC /* UKColor.h */,
 				8720A105182FFFDC0095D5AC /* UKColor.m */,
+				873AEF3B1835AB9000722A2C /* UIColor+UIKick.h */,
+				873AEF3C1835AB9000722A2C /* UIColor+UIKick.m */,
 			);
 			path = UIKick;
 			sourceTree = "<group>";
@@ -238,6 +243,7 @@
 			files = (
 				8720A0E5182FFD960095D5AC /* UIKick.m in Sources */,
 				8720A106182FFFDC0095D5AC /* UKColor.m in Sources */,
+				873AEF3D1835AB9000722A2C /* UIColor+UIKick.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +428,7 @@
 				8720A0FF182FFD960095D5AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8720A100182FFD960095D5AC /* Build configuration list for PBXNativeTarget "UIKickTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +437,7 @@
 				8720A102182FFD960095D5AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
