@@ -11,6 +11,7 @@
 @interface UKColor : NSObject
 
 + (NSMutableDictionary*)colorCache;
++ (UIColor*)actualColorOrColorFromCache:(id)color;
 + (void)setFirstStepBrightnessMultiplier:(CGFloat)multiplier;
 + (void)setSecondStepBrightnessMultiplier:(CGFloat)multiplier;
 + (UIColor*)color:(id)color withBrightnessMultiplier:(CGFloat)multiplier;
